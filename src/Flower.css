@@ -1,0 +1,106 @@
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.hand_flower {
+  /* background-color: aqua; */
+  aspect-ratio: 1;
+  position: absolute;
+  bottom: -220px;
+}
+
+.flower_element {
+  /* background-color: aqua; */
+  position: absolute;
+  display: flex;
+  width: 30%;
+  bottom: -100px;
+}
+
+.flower_element_2 {
+  /* background-color: aqua; */
+  position: absolute;
+  display: flex;
+  width: 30%;
+  bottom: -100px;
+  right: 0;
+}
+
+.grass_element {
+  /* background-color: aqua; */
+  position: absolute;
+  display: flex;
+  width: 25%;
+  left: 50%;
+  bottom: 0;
+}
+
+.view_element {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  width: 105%;
+}
+
+.heart_element_disappear {
+  /* background-color: aqua; */
+  position: absolute;
+  display: none;
+  bottom: 0;
+  left: 5%;
+  width: 80%;
+}
+
+.heart_element_appear {
+  /* background-color: aqua; */
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  left: 5%;
+  width: 80%;
+}
+
+.password_page_appear {
+  position: absolute;
+  background-color: rgb(63, 63, 66);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.password_page_disappear {
+  position: absolute;
+  background-color: rgb(89, 111, 98);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.password {
+  position: absolute;
+  color:rgb(63, 63, 66);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 30px;
+  background-color: rgb(228, 228, 245);
+  width: 30%;
+  top: 35%;
+  left: 36%;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.password input{
+  background-color: aliceblue;
+  color: black;
+  font-family: 'Courier New', Courier, monospace;
+  max-width: 100px;
+}
+
+.submit {
+  margin-left: 10px;
+}
