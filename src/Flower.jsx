@@ -78,7 +78,7 @@ function Flower() {
   };
 
   const handleSubmit = () => {
-    const correctPassword = 'test';
+    const correctPassword = 'Baitoeinarak';
 
     if(inputValue === correctPassword) {
       setShowElement(true);
