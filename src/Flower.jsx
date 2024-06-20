@@ -71,6 +71,7 @@ function Flower() {
 
   const [inputValue, setInputValue] = useState('');
   const [passwordPageName, setPasswordPageName] = useState('password_page_appear');
+  const [showElement, setShowElement] = useState(false);
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
@@ -80,46 +81,45 @@ function Flower() {
     const correctPassword = 'test';
 
     if(inputValue === correctPassword) {
+      setShowElement(true);
       setPasswordPageName('password_page_disappear');
     }
   };
 
   return(
     <>
-      <div className='view_element'>
-        <Lottie 
-          options={View1} 
-          isClickToPauseDisabled={true}
-        />
-      </div>
-      {/* <div className='view_element'>
-        <Lottie 
-          options={DayNight} 
-          isClickToPauseDisabled={true}
-        />
-      </div> */}
-      <div className={heartName}>
-        <Lottie 
-          options={Heart} 
-          isStopped={isHeartStopped}
-          isClickToPauseDisabled={true}
-        />
-      </div>
-      <div className='hand_flower' onClick={handleClick}>
-        <Lottie options={Hand1} />
-      </div>
-      <div className='flower_element'>
-        <Lottie 
-          options={Flower1} 
-          isClickToPauseDisabled={true}
-        />
-      </div>
-      <div className='flower_element_2'>
-        <Lottie 
-          options={Flower1} 
-          isClickToPauseDisabled={true}
-        />
-      </div>
+      {showElement && (
+        <>
+          <div className='view_element'>
+            <Lottie 
+              options={View1} 
+              isClickToPauseDisabled={true}
+            />
+          </div>
+          <div className={heartName}>
+            <Lottie 
+              options={Heart} 
+              isStopped={isHeartStopped}
+              isClickToPauseDisabled={true}
+            />
+          </div>
+          <div className='hand_flower' onClick={handleClick}>
+            <Lottie options={Hand1} />
+          </div>
+          <div className='flower_element'>
+            <Lottie 
+              options={Flower1} 
+              isClickToPauseDisabled={true}
+            />
+          </div>
+          <div className='flower_element_2'>
+            <Lottie 
+              options={Flower1} 
+              isClickToPauseDisabled={true}
+            />
+          </div>
+        </>
+      )}
       <div className={passwordPageName}>
         <div className='password'>
           <label>Enter Password  </label>
