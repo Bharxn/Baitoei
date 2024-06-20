@@ -1,6 +1,11 @@
+html {
+  height: -webkit-fill-available;
+}
+
 body {
   overflow-x: hidden;
   overflow-y: hidden;
+  height: -webkit-fill-available;
 }
 
 .hand_flower {
@@ -81,7 +86,7 @@ body {
 }
 
 .password {
-  position: absolute;
+  position: fixed;
   color:rgb(63, 63, 66);
   font-family: 'Courier New', Courier, monospace;
   font-size: 30px;

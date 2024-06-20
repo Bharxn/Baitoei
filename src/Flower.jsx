@@ -41,7 +41,7 @@ function Flower() {
       preserveAspectRatio: 'xMidYMid slice'
     }
   };
-
+  
   const Hand1 = {
     loop: false,
     autoplay: false,
