@@ -14,7 +14,8 @@ body {
   /* background-color: aqua; */
   aspect-ratio: 1;
   position: absolute;
-  bottom: -220px;
+  left: 0;
+  bottom: -120px;
 }
 
 .flower_element {
@@ -46,7 +47,7 @@ body {
 .view_element {
   position: absolute;
   display: flex;
-  bottom: 0;
+  bottom: -30px;
   left: 0;
   width: 100%;
 }
